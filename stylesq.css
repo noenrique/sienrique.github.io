@@ -1,0 +1,430 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background: white;
+    color: white;
+    background-color: #ffe1e6;
+    background-color: #f7f0f1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23fb5a74' fill-opacity='0.1'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+font-size: 16;
+font-family: 'Roboto', sans-serif;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+}
+
+.container
+{
+    width: 90%;
+    margin: auto;
+}
+
+/* Navegacion */
+.nav-main
+{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand
+{
+    width: 300px;
+}
+
+/* NAV LEFT */
+.nav-main ul 
+{
+    display: flex;
+}
+.nav-main ul li
+{
+    padding: 10px;
+}
+.nav-main ul li a
+{
+    padding: 6px;
+}
+.nav-main ul li a:hover
+{
+    border-bottom: 2px solid #000000;
+}
+.nav-main ul.nav-menu
+{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.menu-btn
+{
+    position: absolute;
+    cursor: pointer;
+    top: 18px;
+    right: 33px;
+    z-index: 10;
+    font-size: 1.4rem;
+    display: none;
+}
+
+/*  SHOWCASE  */
+hr
+{
+    margin: 10px;
+}
+
+.netflix
+{
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 350px;
+    background: url('./img/netflix.jpg' ) no-repeat center center/cover;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.prime
+{
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 350px;
+    background: url('./img/primevideo.jpg' ) no-repeat center center/cover;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.disney
+{
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 350px;
+    background: url('./img/diseny.jpg' ) no-repeat center center/cover;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hbo
+{
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 350px;
+    background: url('./img/hbomax.jpg' ) no-repeat center center/cover;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.apple
+{
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 350px;
+    background: url('./img/apple.jpg' ) no-repeat center center/cover;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.star
+{
+    width: 100%;
+    color: white;
+    background-color: black;
+    height: 350px;
+    background: url('./img/star.jpg' ) no-repeat center center/cover;
+    padding: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tit 
+{
+    color: #000000;
+    font-size: 50px;
+}
+
+.tex 
+{
+    color: #000000;
+    font-size: 18px;
+}
+
+.netflix:hover
+{
+    opacity: .7;
+}
+
+.prime:hover
+{
+    opacity: .7;
+}
+
+.disney:hover
+{
+    opacity: .7;
+}
+
+.hbo:hover
+{
+    opacity: .7;
+}
+
+.apple:hover
+{
+    opacity: .7;
+}
+
+.star:hover
+{
+    opacity: .7;
+}
+/*SOCIAL*/
+
+.social
+{
+    margin: 50px;
+}
+
+.social p
+{
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a
+{
+    margin: 0 30px;
+
+}
+
+.links a i 
+{
+    font-size: 3rem;
+}
+
+/*LINKS*/
+
+.footer-links
+{
+    background-color: #fb5a74;
+    color: white;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.footer-container
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    align-items:  flex-start;
+    justify-content: center;
+}
+
+.footer-container ul
+{
+    margin: 0 auto;
+}
+
+.footer-container ul li
+{
+    line-height: 2.8;
+}
+
+.footer
+{
+    background: #fb5a74;
+    color: white;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+@media (max-width: 800px)
+{
+
+    .netflix
+    {
+        height: 200px;
+    }
+    .prime
+    {
+        height: 200px;
+    }
+    .disney
+    {
+        height: 200px;
+    }
+    .hbo
+    {
+        height: 200px;
+    }
+    .apple
+    {
+        height: 200px;
+    }
+    .star
+    {
+        height: 200px;
+    }
+    .nav-brand
+    {
+        width: 200px;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .menu-btn
+    {
+        display: block;
+        color: #000000;
+    }
+
+    .menu-btn:hover
+    {
+        opacity: .5;
+    }
+
+    .nav-main ul.nav-menu
+    {
+        display: block;
+        font: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fb5a74;
+        width: 50%;
+        height: 100%;
+        border-right: #000000 1px solid;
+        opacity: .9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform .5s ease-in-out;
+        
+    }
+
+    .nav-main ul.nav-menu li
+    {
+        padding: 20px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .nav-main ul.nav-menu li:last-child
+    {
+        border-bottom: 0;
+    }
+
+    .nav-main ul.nav-menu.show 
+    {
+        transform: translateX(-20px);
+    }
+
+    .nav-main ul.nav-menu li
+    {
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .nav-main ul.nav-menu-right 
+    {
+        margin-right: 40px;
+    }
+
+    .news-cards
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-banner-one .content,
+    .cards-banner-two .content
+    {
+        width: 80%;
+    }
+
+    .footer-links .footer-container
+    {
+        grid-template-columns: (2, 1fr);
+    }
+
+    @media (max-width: 500px) 
+    {
+      
+        .news-cards
+        {
+            grid-template-columns: 1fr;
+        }
+
+        .cards-banner-one .content,
+        .cards-banner-two .content
+        {
+            width: 100%;
+            padding: 60px 20px;
+        }
+
+        .footer-links .footer-container
+        {
+            grid-template-columns: 1fr;
+        }
+
+        .footer-links .footer-container ul 
+        {
+            text-align: center;
+        }
+    }
+    
+}
